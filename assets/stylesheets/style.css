@@ -1,0 +1,315 @@
+*{
+  /*outline: 1px solid red;*/
+}
+@font-face {
+  font-family: grotesque;
+  src: url("../fonts/acherus_grotesque_-_regular.otf") format("opentype");
+}
+@font-face {
+  font-family: slab;
+  src: url("../fonts/Museo_Slab_500_2.otf") format("opentype");
+}
+@font-face {
+  font-family: slab-light;
+  src: url("../fonts/RobotoSlab-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: slab-regular;
+  src: url("../fonts/RobotoSlab-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: insolent;
+  src: url("../fonts/Insolent.otf") format("opentype");
+}
+
+
+.color-primary-0 { color: #42a4f4 }
+.color-primary-1 { color: #AAD8FF }
+.color-primary-2 { color: #7AC3FF }
+.color-primary-3 { color: #004C8C }
+.color-primary-4 { color: #003B6C }
+.obu{ background-color: #9eab05 }
+.dojo{ background-color: #06AAE2 }
+.en { background-color: #14223d }
+.uw { background-color: #4b2e83 }
+
+body{
+  margin: 0px;
+  background-color: #272634;
+}
+div.container{
+  width: 1280px;
+  margin: 0px auto;
+  padding: 0px;
+}
+div{
+  padding: 10px 60px;
+}
+div.header{
+  background-color: #06AAE2;
+  color: white;
+  height: 160px;
+}
+div.header img{
+  transform: translateY(5%);
+  height: 140px;
+  width: auto;
+  border-radius: 50%;
+  border: 3px solid white;
+  float: left;
+}
+div.header h1{
+  transform: translateY(35%);
+  font-size: 72px;
+  font-family: grotesque;
+  font-weight: bold;
+  text-align: right;
+  margin: 0px;
+}
+div.quote{
+  height: 500px;
+  margin: 0px;
+  position: relative;
+}
+div.quote::after{
+  content: "";
+  background-image: url('../images/code.jpg');
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+div.quote h3{
+  transform: translateY(112%);
+  font-size: 42px;
+  font-family: slab;
+  color: white;
+  opacity: 1.0;
+  text-align: right;
+}
+div.quote p{
+  transform: translateY(200%);
+  font-size: 32px;
+  font-family: slab-light;
+  color: #7AC3FF;
+  text-align: right;
+}
+div.about{
+  height: auto;
+  background-color: white;
+  color: black;
+  margin: 0px;
+}
+  div.about p{
+    font-size: 24px;
+    font-family: slab-light;
+  }
+div.projects{
+  height: auto;
+  background-color: black;
+  color: white;
+}
+  div.about, div.projects, div.history, div.leadership, div.contact{
+    padding-bottom: 50px;
+  }
+  div.about h2, div.projects h2, div.history h2, div.leadership h2, div.contact h2{
+    text-align: center;
+    font-family: grotesque;
+    font-size: 42px;
+    margin: 80px 0px;
+  }
+    div.project{
+      padding: 0px;
+      height: 476px;
+      margin-bottom: 100px;
+    }
+    div.project h4{
+      font-size: 34px;
+      margin: 5px;
+    }
+      div.project-left{
+        width: 75%;
+        height: 100%;
+        font-size: 24px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0px;
+        text-align: center;
+      }
+      div.project-left h4{
+        font-family: slab-light;
+        font-family: grotesque;
+      }
+      div.project-left img{
+        height: 420px;
+        width: auto;
+      }
+      div.project-right{
+        width: 24%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        padding: 0px;
+      }
+      div.project-right h4{
+        font-family: slab-light;
+      }
+      div.project-right-top, div.project-right-middle{
+        padding: 0px 10px;
+        height: 200px
+      }
+      div.project-right-top p{
+        font-family: grotesque;
+        font-size: 24px;
+        margin: 5px;
+      }
+      div.project-right-middle ul{
+        list-style: none;
+        padding-left: 5px;
+      }
+      div.project-right-middle li{
+        font-family: grotesque;
+        font-size: 24px;
+        text-align: left;
+      }
+    div.project-right a{
+      display: inline-block;
+      text-decoration: none;
+      line-height: 58px;
+      width: 93%;
+      margin: 0px 10px;
+      font-size: 32px;
+      font-family: grotesque;
+      color: white;
+      background-color: black;
+      outline: 3px solid #42a4f4;
+      text-align: center;
+    }
+div.history{
+  background-color: white;
+  color: black;
+}
+div.leadership{
+  background-color: black;
+  color: white;
+}
+  div.time, div.role{
+    height: 200px;
+    padding: 0px;
+    margin-bottom: 40px;
+  }
+  div.time-left{
+    color: white;
+    outline: 4px solid black;
+  }
+  div.role-right{
+    color: white;
+  }
+  div.time-left.obu h4, div.time-left.uw h4, div.role-right.obu h4, div.time-left.en h4{
+    transform: translateY(25%);
+    font-family: grotesque;
+    font-size: 36px;
+    margin: 0px 10px;
+    text-align: center;
+  }
+  div.time-left.uw h4, div.time-left.en h4{
+    transform: translateY(58%);
+  }
+  div.time-left.dojo h4, div.role-right.dojo h4{
+    line-height: 200px;
+    font-family: grotesque;
+    font-size: 36px;
+    margin: 0px;
+    text-align: center;
+  }
+  div.time-left, div.role-right{
+    width: 25%;
+    height: 100%;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  div.time-right, div.role-left{
+    width: 69%;
+    height: 100%;
+    margin-left: 40px;
+    padding: 0px 10px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: grotesque;
+    text-align: justify;
+  }
+  div.role-left{
+    margin-left: 0px;
+    margin-right: 40px;
+  }
+  div.time-right h4, div.role-left h4{
+    font-family: slab-light;
+    font-size: 28px;
+    margin: 0px;
+    text-align: left;
+  }
+  div.time-right p, div.role-left p{
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+div.contact{
+  color: black;
+  background-color: white;
+  height: 200px;
+  padding: 0px;
+}
+  div.contact h2{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 200px;
+    margin: 0px 0px;
+    text-align: center;
+    line-height:200px;
+    color: black;
+    background-color: #06AAE2;
+  }
+  div.contact ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    height: 200px;
+    padding-top: 24px;
+    margin: 0px;
+    list-style-type: none;
+    font-family: grotesque;
+  }
+  div.contact ul li{
+    font-size: 28px;
+    height: 36px;
+    text-align: left;
+    padding-left: 140px;
+  }
+  div.contact ul li img{
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+    transform: translateY(8%);
+  }
+  div.contact ul li:last-child{
+    margin-top: 5px;
+  }
+  div.contact ul li:last-child img{
+    height: 24px;
+    width: auto;
+    margin-right: 5px;
+  }
+  div.contact ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  div.contact ul li:last-child a{
+    outline: 3px solid black;
+    padding-left: 12px;
+    margin-right: 18px;
+  }
