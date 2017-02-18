@@ -318,6 +318,5 @@ div.contact{
     margin-right: 18px;
   }
   div.contact ul li:last-child a:hover{
-    outline: 3px solid black;
     background-color: #06AAE2;
   }
