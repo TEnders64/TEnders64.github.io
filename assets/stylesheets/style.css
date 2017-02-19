@@ -189,6 +189,7 @@ div.projects{
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      transition: 0.25s;
     }
     div.project-right a:hover{
       background-color: #42a4f4;
@@ -314,10 +315,15 @@ div.contact{
     color: black;
   }
   div.contact ul li:last-child a{
+    display: inline-block;
+    vertical-align: top;
     outline: 3px solid black;
-    padding-left: 12px;
+    padding-left: 8px;
     margin-right: 18px;
+    margin-left: 4px;
+    transition: 0.25s;
   }
   div.contact ul li:last-child a:hover{
     background-color: #06AAE2;
+    transform: scale(1.02);
   }
